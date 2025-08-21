@@ -9,7 +9,7 @@ int main(int argc, char** argv) {
 	while(r == 's' || r == 'S'){
 		std::cout<<"qual a base da sua potenciacao? ";
 		std::cin>>b1;
-		std::cout<<"qual a potencia da sua potenciacao? ";
+		std::cout<<"qual o indice da sua potenciacao? ";
 		std::cin>>p;
 		b2 = 1;
 		i = 1;
