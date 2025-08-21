@@ -1,0 +1,33 @@
+
+# Ignorar arquivos temporários do sistema
+.DS_Store
+.˜*
+Thumbs.db
+
+# Ignorar arquivos de backup
+*.bak
+*.tmp
+*.swp
+*.o
+*.exe
+*.win
+
+# Ignorar arquivos temporários de editores
+*.log
+*.aux
+*.out
+*.toc
+*.gz
+
+# Ignorar arquivos de compilação
+*.class
+*.pyc
+__pycache__/
+
+# Pastas de cache e editor
+.vscode/
+.idea/
+
+# Arquivos exportados
+*.pdf
+*.zip
