@@ -1,26 +1,28 @@
 #include <iostream>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
-int main(int argc, char** argv) {
-	int b1, b2, p, i;
-	char r;
-	r = 's';
-	
-	while(r == 's' || r == 'S'){
-		std::cout<<"qual a base da sua potenciacao? ";
-		std::cin>>b1;
-		std::cout<<"qual o indice da sua potenciacao? ";
-		std::cin>>p;
-		b2 = 1;
-		i = 1;
-		while(i <= p){
-			b2 = b2 * b1;
-			i= i + 1;
-		}
-		std::cout<<"sua potenciacao e igual a "<<b2;
-		std::cout<<"\ndeseja continuar s/n? ";
-		std::cin>>r;
+int potencia(int base, int expo){
+	int resultado = 1;
+	int i = 1;
+	while(i <= expo){
+		resultado = base * resultado;
+		i = i + 1;
 	}
-	return 0;
+	return resultado;
 }
+	int main(int argc, char** argv) {
+		 int base, expo;
+		 char r;
+		 r = 's';
+		 while(r == 's' || r == 'S'){
+		 std::cout << "digite uma base: ";
+		 std::cin >> base;
+		 std::cout << "Digite o expoente: ";
+	     std::cin >> expo;
+	     int resultado = potencia(base, expo);
+	     std::cout << base << " elevado a " << expo << " e: " << resultado;
+	     std::cout << "\ndeseja continuar s/n? ";
+	     std::cin >> r;
+	 	}
+		return 0;
+	}
