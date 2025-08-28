@@ -6,6 +6,7 @@ int main(int argc, char** argv) {
 	int b1, b2, p, i;
 	char r;
 	r = 's';
+	
 	while(r == 's' || r == 'S'){
 		std::cout<<"qual a base da sua potenciacao? ";
 		std::cin>>b1;
